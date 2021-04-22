@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <div style="background: rgb(220, 220, 220); width: 100vw;">
+      <%= link_to "Home", root_path %>
+      <%= link_to "Contact", contact_path %>
+      <%= link_to "About", about_us_path %>
+    </div>
     <%= yield %>
+    <div style="background: rgb(220, 220, 220); width: 100vw;">
+      Beautiful footer
+    </div>
   </body>
 </html>

@@ -1,0 +1,16 @@
+<h1>Contact page</h1>
+
+<p>Please call us on 9999-9999</p>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" value="<%= params[:member] %>" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<h2>Members</h2>
+
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ul>
